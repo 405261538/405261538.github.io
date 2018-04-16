@@ -1,11 +1,19 @@
-
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>bounce demo</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <style>
+  #toggle {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
 <body>
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-$( document ).click(function() {
-  $( "button" ).toggle( "bounce", { times: 3 }, "slow" );
-});
-</script>
   
   <div id="123" > 
 <img src="http://www.qzgqxh.com/upload/news/DC200ADLZ.jpg" id="123">
@@ -28,27 +36,15 @@ height=20px></a>
 <img  src="http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconlmbq50amelr.png"width=20px
 height=20px></a><STRONG>音符可以點唷!</STRONG>  
 </p>
-  
- <div class="container-fluid">
-  <h3 class="text-primary text-center">jQuery Playground</h3>
-  <div class="row">
-    <div class="col-xs-6">
-      <h4>#left-well</h4>
-      <div class="well" id="left-well">
-        <button class="btn btn-default target" id="target1">#target1</button>
-        <button class="btn btn-default target" id="target2">#target2</button>
-        <button class="btn btn-default target" id="target3">#target3</button>
-      </div>
-    </div>
-    <div class="col-xs-6">
-      <h4>#right-well</h4>
-      <div class="well" id="right-well">
-        <button class="btn btn-default target" id="target4">#target4</button>
-        <button class="btn btn-default target" id="target5">#target5</button>
-        <button class="btn btn-default target" id="target6">#target6</button>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+ 
+ <p>Click anywhere to toggle the box.</p>
+<div id="toggle"></div>
+ 
+<script>
+$( document ).click(function() {
+  $( "#toggle" ).toggle( "bounce", { times: 3 }, "slow" );
+});
+</script> 
 
+</body>
+</html>
