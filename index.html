@@ -1,10 +1,20 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>bounce demo</title>
+  
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   <style>
   #toggle {
+    
+    width: 20px;
+    height: 20px;
+    }
+    #toggle1 {
+    
+    width: 20px;
+    height: 20px;
+    }
+    #toggle2 {
     
     width: 20px;
     height: 20px;
@@ -27,11 +37,11 @@
 <br>
 <a href="https://www.youtube.com/watch?v=1KbauuM9EhY">Yiruma - River Flows In You.</a>   
 <a href="http://www.gangqinpu.com/html/1511.htm">
-  <img  src="http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconlmbq50amelr.png" id="toggle"></a>  
+  <img  src="http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconlmbq50amelr.png" id="toggle1"></a>  
 <br>
 <a href="https://www.youtube.com/watch?v=Zb5wTLpzEJA">Kevin Kern - Through the Arbor.</a>  
 <a href="http://www.gangqinpu.com/html/1210.htm">
-<img  src="http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconlmbq50amelr.png" id="toggle"></a><STRONG>音符可以點唷!</STRONG>  
+<img  src="http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconlmbq50amelr.png" id="toggle2"></a><STRONG>音符可以點唷!</STRONG>  
 </p>
  
  <p>Click anywhere to toggle the box.</p>
@@ -39,7 +49,9 @@
  
 <script>
 $( document ).click(function() {
-  $( "#toggle" ).toggle( "bounce", { times: 3 }, "slow" );
+  $( "#toggle" ).toggle( "bounce", { times: 50 }, "slow" );
+  $( "#toggle1" ).toggle( "bounce", { times: 50 }, "slow" );
+  $( "#toggle2" ).toggle( "bounce", { times: 50 }, "slow" );
 });
 </script> 
 
