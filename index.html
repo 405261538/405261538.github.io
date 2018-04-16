@@ -1,8 +1,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-  $(document).ready(function(){
-     $("button").addClass("animated bounce");
-  });
+$( document ).click(function() {
+  $( "button" ).toggle( "bounce", { times: 3 }, "slow" );
+});
 </script>
 <body>
  
